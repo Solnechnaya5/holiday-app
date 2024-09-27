@@ -1,0 +1,22 @@
+{
+    "extends": [
+      "eslint:recommended",
+      "plugin:vue/recommended",
+      "prettier"
+    ],
+    "plugins": ["vue", "prettier"],
+    "rules": {
+      "prettier/prettier": "error",
+      "vue/no-unused-vars": "warn",
+      "vue/require-v-for-key": "warn"
+    },
+    "env": {
+      "browser": true,
+      "node": true,
+      "es6": true
+    },
+    "parserOptions": {
+      "parser": "@typescript-eslint/parser"
+    }
+  }
+  

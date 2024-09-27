@@ -1,0 +1,328 @@
+/*css null */
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+
+/* all styles */
+body {
+    color: #fff;
+    background-color: rgb(20, 19, 19);
+}
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.33);
+    border-radius: 30px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 0, 255, 0.52);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: black;
+}
+
+::-webkit-scrollbar-thumb:hover ::-webkit-scrollbar-track {
+    background-color: #4645458a;
+}
+.page-wrapper {
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+}
+.home-page__top {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+.main-title {
+    font-size: 42px;
+    line-height: 150%;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.error-message {
+}
+.search-coutry {
+    max-width: 350px;
+    height: 40px;
+    padding: 0 10px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    border-radius: 10px;
+    -webkit-box-shadow: 2px 0px 4px 2px rgba(255, 0, 255, 0.52);
+    -moz-box-shadow: 2px 0px 4px 2px rgba(255, 0, 255, 0.52);
+    box-shadow: 2px 0px 4px 2px rgba(255, 0, 255, 0.52);
+}
+.search-coutry input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: inherit;
+    height: inherit;
+    border: none;
+    background-color: black;
+}
+.search-coutry input:focus {
+    outline: none;
+    border: none;
+}
+.search-coutry input[type="text"] {
+    color: #fff;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: normal;
+}
+.search-coutry input::placeholder {
+    color: #fff;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: normal;
+}
+.home-page__countries {
+    display: flex;
+    justify-content: space-between;
+}
+
+.subtitle {
+    font-size: 32px;
+    line-height: 26px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.countries-list {
+    margin-right: 50px;
+}
+.countries-list__item {
+    color: #fff;
+    font-size: 18px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    background: rgba(0, 0, 0, 0.792);
+    border-radius: 10px;
+    -webkit-box-shadow: 2px 0px 4px 2px rgba(255, 0, 255, 0.52);
+    -moz-box-shadow: 2px 0px 4px 2px rgba(255, 0, 255, 0.52);
+    box-shadow: 2px 0px 4px 2px rgba(255, 0, 255, 0.52);
+    padding: 10px 15px;
+    margin-bottom: 15px;
+}
+.countries-list__item:hover,
+.countries-list__item:focus {
+    background-color: rgba(255, 0, 255, 0.714);
+    color: black;
+    font-weight: 600;
+}
+.countries-widget {
+    width: 600px;
+}
+.countries-widget {
+    padding: 15px;
+    background-color: black;
+    border-radius: 10px;
+    -webkit-box-shadow: 2px 0px 10px 2px rgba(255, 0, 255, 0.52);
+    -moz-box-shadow: 2px 0px 10px 2px rgba(255, 0, 255, 0.52);
+    box-shadow: 2px 0px 10px 2px rgba(255, 0, 255, 0.52);
+}
+.countries-widget__country {
+    padding: 10px;
+    border: 2px solid rgba(255, 0, 255, 0.52);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.countries-widget__country h3 {
+    font-size: 22px;
+    line-height: 36px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.countries-widget__country p {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.coutry-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+.country-holidays {
+    margin-bottom: 100px;
+}
+.country-holidays__item {
+    height: 40px;
+    padding: 0 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    -webkit-box-shadow: 2px 0px 4px 2px rgba(255, 0, 255, 0.52);
+    -moz-box-shadow: 2px 0px 4px 2px rgba(255, 0, 255, 0.52);
+    box-shadow: 2px 0px 4px 2px rgba(255, 0, 255, 0.52);
+}
+.country-holidays__item p {
+    font-size: 18px;
+    line-height: 22px;
+}
+.country-years {
+    display: flex;
+    justify-content: space-between;
+}
+.country-years__btn {
+    color: white;
+    font-size: 18px;
+    line-height: 20px;
+    padding: 10px 15px;
+    background-color: black;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 0, 255, 0.52);
+    margin-right: 10px;
+}
+.country-years__btn:last-child {
+    margin-right: 0;
+}
+.country-years__btn:hover,
+.country-years__btn:focus {
+    background-color: rgba(255, 0, 255, 0.52);
+    color: black;
+    font-weight: 600;
+}
+
+@media (max-width: 1024px) {
+    .home-page__countries {
+        flex-direction: column;
+    }
+    .countries-conteiner2 {
+        order: -1;
+        margin-bottom: 50px;
+    }
+}
+@media (max-width: 825px) {
+    .page-wrapper {
+        padding: 20px;
+    }
+    .main-title {
+        font-size: 32px;
+    }
+    .subtitle {
+        font-size: 24px;
+    }
+    .home-page__top,
+    .countries-conteiner2,
+    .country-holidays {
+        margin-bottom: 30px;
+    }
+    .countries-widget {
+        width: 360px;
+    }
+    .country-years {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .country-years__btn {
+        margin: 5px;
+    }
+}
